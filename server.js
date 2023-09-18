@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 })
 
 // Route to the Pokemon names and images
-app.get("/pokemon/", (req, res) => {
-  res.json(pokemon)
+app.get("/pokemon", (req, res) => {
+  res.render("Index")
 });
 
