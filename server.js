@@ -23,6 +23,6 @@ app.get("/", (req, res) => {
 
 // Route to the Pokemon names and images
 app.get("/pokemon", (req, res) => {
-  res.render("Index")
+  res.render("Index", { pokemon: pokemon });
 });
 
