@@ -26,3 +26,9 @@ app.get("/pokemon", (req, res) => {
   res.render("Index", { pokemon: pokemon });
 });
 
+// New route for pokemon/:id
+app.get("/pokemon/:id", (req, res) => {
+  const pokemonId = req.params.id;
+  res.send(pokemonId);
+});
+
