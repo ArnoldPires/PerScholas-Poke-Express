@@ -11,9 +11,13 @@ const color = {
 class Index extends React.Component {
   render() {
     const { pokemon } = this.props;
+    console.log(pokemon)
     return (
       <div style={myStyle}>
         <h1>See All The Pokemon!</h1>
+        <nav>
+          <a href="/pokemon/newPoke">Add a new Pokemon!</a>
+        </nav>
         <ul>
           {pokemon.map((poke, index) => (
             <li key={index}>
