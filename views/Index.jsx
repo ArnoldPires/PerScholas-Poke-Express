@@ -4,6 +4,9 @@ const myStyle = {
   color: '#ffffff',
   backgroundColor: '#000000',
 };
+const color = {
+  color: 'white',
+}
 
 class Index extends React.Component {
   render() {
@@ -14,7 +17,7 @@ class Index extends React.Component {
         <ul>
           {pokemon.map((poke, index) => (
             <li key={index}>
-              <a href={`/pokemon/${index}`}>{cap(poke.name)}</a>
+              <a style={color} href={`/pokemon/${index}`}>{cap(poke.name)}</a>
             </li>
           ))}
         </ul>

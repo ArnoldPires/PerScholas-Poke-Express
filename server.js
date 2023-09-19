@@ -29,5 +29,7 @@ app.get("/pokemon", (req, res) => {
 // New route for pokemon/:id
 app.get("/pokemon/:id", (req, res) => {
   const pokemonId = req.params.id;
-  res.send(pokemonId);
+  // Get the Pokémon data based on the id
+  const pokemonData = pokemon[pokemonId];
+  res.render("Show", { pokemonData });
 });
