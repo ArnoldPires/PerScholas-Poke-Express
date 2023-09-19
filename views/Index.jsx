@@ -13,7 +13,9 @@ class Index extends React.Component {
         <h1>See All The Pokemon!</h1>
         <ul>
           {pokemon.map((poke, index) => (
-            <li key={index}>{cap(poke.name)}</li>
+            <li key={index}>
+              <a href={`/pokemon/${index}`}>{cap(poke.name)}</a>
+            </li>
           ))}
         </ul>
       </div>

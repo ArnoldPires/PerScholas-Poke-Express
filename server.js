@@ -31,4 +31,3 @@ app.get("/pokemon/:id", (req, res) => {
   const pokemonId = req.params.id;
   res.send(pokemonId);
 });
-
