@@ -12,8 +12,7 @@ class Edit extends React.Component {
         <input
           type="checkbox"
           name="evolved"
-          defaultChecked={this.props.pokemon.evolved ? true : false}
-        />
+          defaultChecked={this.props.pokemon.evolved ? true : false} />
         <br />
         <input type="submit" value="Update Pokemon" />
       </form>
