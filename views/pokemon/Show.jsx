@@ -33,7 +33,7 @@ class Show extends React.Component {
         <h2>{cap(pokemonData.name)}</h2>
         <img src={imageUrl} alt={pokemonData.name} />
         <br />
-        {pokemonData.evolved ? "Evolved Version" : "Not Evolved"} {/* Corrected "Verison" to "Version" */}
+        {pokemonData.evolved ? "Evolved Version" : "Not Evolved"}
         <br />
         <a style={color} href="/pokemon">Back</a>
       </div>
